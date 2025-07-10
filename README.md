@@ -70,3 +70,78 @@
   </footer>
 </body>
 </html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6b4c3b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.biografia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+  align-items: center;
+  background-color: #fff;
+}
+
+.biografia img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.biografia div {
+  flex: 1;
+}
+
+.productos {
+  padding: 2rem;
+}
+
+.productos h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.producto {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #6b4c3b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
