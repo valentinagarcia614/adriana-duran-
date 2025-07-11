@@ -1,147 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Adriana Cristina Durán</title>
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artesanías Wulaju</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2e9e4; /* fondo beige claro */
+      display: flex;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .profile {
+      width: 25%;
+      background-color: #fff9f5;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .profile img {
+      width: 100%;
+      border-radius: 12px;
+      border: 3px solid #d4a373;
+    }
+
+    .profile h2 {
+      text-align: center;
+      margin: 15px 0 5px;
+      color: #6b4f3b;
+    }
+
+    .contact-info {
+      text-align: center;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+      color: #5a4e42;
+    }
+
+    .contact-info a {
+      display: block;
+      color: #7a5c4b;
+      text-decoration: none;
+      margin-top: 6px;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .history {
+      background-color: #fcefe3;
+      padding: 12px;
+      border-left: 5px solid #d4a373;
+      border-radius: 8px;
+    }
+
+    .history strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #a06134;
+    }
+
+    .products {
+      width: 75%;
+    }
+
+    .products h2 {
+      margin-bottom: 20px;
+      color: #7c4c2c;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: #fffdf9;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 10px;
+      font-size: 1.1em;
+      color: #5a3e2b;
+    }
+
+    .product-card p {
+      margin: 0 10px 10px;
+      font-size: 0.9em;
+      color: #5f4b3b;
+    }
+
+    .product-card button {
+      margin: 10px;
+      padding: 8px;
+      background-color: #a06134;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: #874f28;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Adriana Cristina Durán Agudelo</h1>
-  </header>
-
-  <section class="biografia">
-    <img src="img/artesana.jpg" alt="Foto de la artesana">
-    <div>
-      <h2>Historia</h2>
-      <p>
-        Elaboración de imágenes, llaveros, lapiceros, pulseras tejidas en macramé, etc.
-        El local fue fundado hace mucho tiempo inspirado por su madre, quien le enseñó a tejer.
-        Desde entonces, lleva años honrando ese legado.
-      </p>
+<div class="container">
+  <!-- Perfil -->
+  <div class="profile">
+    <img src="../pagina/imagenes/Adriana.png" alt="Foto Adriana Cristina Durán Agudelo">
+    <h2>Adriana Cristina Durán Agudelo</h2>
+    <div class="contact-info">
+      <a href="adrianaduran575@ gmail.com">adrianaduran575@ gmail.com</a>
+      <a href="tel:+321 2875536">Tel: +321 2875536</a> 
     </div>
-  </section>
-
-  <section class="productos">
-    <h2>Productos artesanales</h2>
-    <div class="galeria">
-      <div class="producto">
-        <img src="img/collar-cedro.jpg" alt="Collar en semilla de cedro">
-        <p>Collar en semilla de cedro - $15,000</p>
+    <div class="history">
+      <strong>Historia:</strong>
+      <p>Este emprendimiento nació del amor y la enseñanza de una madre que le inculcó el arte de tejer desde niña. Lo que comenzó como una tradición familiar se transformó en una pasión y en un negocio lleno de historia y dedicación. Hoy, el local ofrece creaciones únicas como llaveros, pulseras y detalles decorativos, todos hechos a mano con cariño. Más que vender productos, busca honrar un legado, transmitir emociones y mantener viva la tradición del trabajo artesanal.</p>
+    </div>
+  </div>
+  <!-- Productos -->
+  <div class="products">
+    <h2>Productos de Artesanías Wulaju</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="../pagina/imagenes/collarsemillacedro.png" alt="Collar en semilla de cedro" />
+        <h3>Collar en semilla de cedro</h3>
+        <p>Esta hecho en Semilla de cedro, hilo o cuerda encerada, cierres metálicos, aguja.</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/manillas-cafe.jpg" alt="Manillas recinadas en café">
-        <p>Manillas recinadas en café - $12,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/manillaensemilla.png" alt="Manillas en semilla de café" />
+        <h3>Manillas en semilla de café</h3>
+        <p>Esta diseñado en Semilla de café, hilo, resina, cierres, aguja.</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/llavero-cafe-libano.jpg" alt="Llavero en café - Líbano Tolima">
-        <p>Llavero semillas de café temática Líbano Tolima - $12,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/llaverocafe.png" alt="Llavero en semillas de café" />
+        <h3>Llavero en semillas de café</h3>
+        <p>Elaborada con  Semilla de café, resina, herraje metálico, argolla, hilo decorativo (opcional).</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/llavero-toronbolo.jpg" alt="Llavero toronbolo Colombia">
-        <p>Llavero toronbolo temática Colombia - $10,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/llaverodetorombolo.png" alt="Llavero en semillas de torombolo " />
+        <h3>Llavero en semillas de torombolo </h3>
+        <p>Hecho con  Semillas naturales toronbolo, , hilo decorativo, herraje metálico, argolla.</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/topitos-frailejon.jpg" alt="Topitos frailejón">
-        <p>Topitos de madera temática frailejón - $10,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/topitosdemadera.png" alt="topitos de madera " />
+        <h3>topitos de madera </h3>
+        <p> Esta a base Madera, pintura acrílica, base de silicona, pegamento.</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/portalapiceros.jpg" alt="Portalapiceros">
-        <p>Portalapiceros semilla de cedro y guadua - $25,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/portalapiceros.png" alt="porta lapiceros en semilla de cedro " />
+        <h3>porta lapiceros en semilla de cedro </h3>
+        <p>Diseñado en Semilla de cedro, guadua, pegamento, barniz natural, elementos decorativos (opcional).</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/imanes-nevera.jpg" alt="Imanes de nevera">
-        <p>Imanes de nevera frases y temática Líbano Tolima - $12,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/imanesdenevera.png" alt="imanes de nevera " />
+        <h3>imanes de nevera </h3>
+        <p>Madera, pintura acrílica, imán adhesivo, frases impresas o pintadas, pegamento.</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/portallaves-balcon.jpg" alt="Portallaves balcón">
-        <p>Porta llaves forma de balcón en madera - $25,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/portallave.png" alt="Porta llaves " />
+        <h3>Porta llaves </h3>
+        <p>Hecho en tagua, acrílicos, cola de rata, erraje y resina.</p>
+        <button>Ver más</button>
       </div>
-      <div class="producto">
-        <img src="img/manillas-macrame.jpg" alt="Manillas tejidas café">
-        <p>Manillas de café tejidas en macramé - $10,000</p>
+      <div class="product-card">
+        <img src="../pagina/imagenes/manillaenmacrame.png" alt="Manillas de café en macramé" />
+        <h3>Manillas de café en macramé</h3>
+        <p>Esta elaborado en semilla de cafe, cuerda macrame, adornos, broche.</p>
+        <button>Ver más</button>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Adriana Cristina Durán. Artesanía con amor.</p>
-  </footer>
+  </div>
+</div>
 </body>
 </html>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
-}
+      
+     
 
-header {
-  background-color: #6b4c3b;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-.biografia {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 2rem;
-  align-items: center;
-  background-color: #fff;
-}
-
-.biografia img {
-  max-width: 300px;
-  border-radius: 8px;
-}
-
-.biografia div {
-  flex: 1;
-}
-
-.productos {
-  padding: 2rem;
-}
-
-.productos h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
-
-.producto {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.producto img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-footer {
-  background-color: #6b4c3b;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
